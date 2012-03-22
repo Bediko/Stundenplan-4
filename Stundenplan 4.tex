@@ -2,25 +2,25 @@
 \usepackage[landscape]{geometry}
 \usepackage[table]{xcolor}
 
-\newcommand{\V}[3]{
+\newcommand{\V}[4]{
 	\multicolumn{2}{|p{3.4cm}|}{
 		\cellcolor{green}
-		#1 \hspace{\stretch{1}}V \newline 
+		#1 \hspace{\stretch{1}}#4\hspace{\stretch{1}}V \newline 
 		\centering #2 #3
 	}
 }
-\newcommand{\U}[3]{
+\newcommand{\U}[4]{
 	\multicolumn{2}{|p{3.4cm}|}{
 		\cellcolor{yellow}
-		#1 \hspace{\stretch{1}}U \newline 
+		#1 \hspace{\stretch{1}}#4\hspace{\stretch{1}}U \newline 
 		\centering #2 #3
 	}
 }
 
-\newcommand{\Pra}[4]{
+\newcommand{\Pra}[5]{
 	\multicolumn{4}{|p{7.3cm}|}{
 		\cellcolor{red}
-		#1 \hspace{\stretch{1}}P \newline 
+		#1 \hspace{\stretch{1}}#5\hspace{\stretch{1}}P \newline 
 		\centering #2 #3 \hspace{\stretch{1}} #4
 	}
 }
@@ -31,55 +31,55 @@
 \begin{tabular}{*{12}{|p{1.5cm}}|}
 \hline
  Tag & 8-9 & 9-10 & 10-11 & 11-12 & 12-13 & 13-14 & 14-15 & 15-16 & 16-17 & 17-18 & 18-19 \\ \hline 
- Montag & \U{DNM}{Me}{B314}
-	& \U{DBS}{Dz}{F104}
-	&	\V{DNM}{Me}{F303} \vline
+ Montag & \U{DNM}{Me}{B314}{8:30}
+	& \U{DBS}{Dz}{F104}{10:15}
+	&	\V{DNM}{Me}{F303}{12:00} \vline
 	&&&&& \\
 \hline
 Dienstag &
-	\Pra{DNM}{Me}{B314}{17.4./22.5/26.6}
+	\Pra{DNM}{Me}{B314}{17.4./22.5/26.6}{8:00}
 	&
 	\cellcolor{green}
-	DNM V \newline Me F303
+	DNM V 12:00\newline Me F303
 	&
 	\cellcolor{green}
-	DBS V \newline Dz B120
+	DBS V 13:15\newline Dz B120
 	&
-	\Pra{DBS}{We}{B315}{3.4./15.5/19.6}
+	\Pra{DBS}{We}{B315}{3.4./15.5/19.6}{14:00}
 	& \\
 	\hline
 Mittwoch 
 &
-\U{DBS}{Dz}{F104}
+\U{DBS}{Dz}{F104}{8:15}
 &
-\V{DBS}{Dz}{B212}
+\V{DBS}{Dz}{B212}{10:00}
 &
-\V{IAS}{Bm}{BE08}
+\V{IAS}{Bm}{BE08}{12:00}
 &
 \cellcolor{yellow}
-IAS \hspace{\stretch{1}}U \newline 
+IAS \hspace{\stretch{1}}U 13:45\newline 
 \centering Bm F104 
 &
-\Pra{IAS}{Bm}{B312}{28.3./25.4./23.5./27.6}
+\Pra{IAS}{Bm}{B312}{28.3./25.4./23.5./27.6}{15:00}
 \\
 \hline
 Donnerstag &
-\U{NUM}{Ue}{B312}
+\U{NUM}{Ue}{B312}{8:30}
 &
-\V{NUM}{Ue}{B209}
+\V{NUM}{Ue}{B209}{10:15}
 &
 &&&&
 \multicolumn{2}{|p{3.4cm}|}{
 \cellcolor{cyan}
-KRY \hspace{\stretch{1}}S \newline 
+KRY \hspace{\stretch{1}}16:00\hspace{\stretch{1}}S \newline 
 \centering Tp BE14
 }&
 \\
 \hline
 Freitag &
-\V{RFI}{Ke}{F303}
+\V{RFI}{Ke}{F303}{0:00}
 &&&&&
-\V{PRO}{Hs}{F303}
+\V{PRO}{Hs}{F303}{0:00}
 &
 \cellcolor{red}
 Pro P \newline
